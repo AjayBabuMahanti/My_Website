@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | YourBrand Web Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .filter-btn {
+            background: transparent;
+            border: 1px solid var(--text-light);
+            color: var(--text-secondary);
+            padding: 8px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--color-electric-blue);
+            color: white;
+            border-color: var(--color-electric-blue);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo">YourBrand<span>.</span></a>
+            <nav class="desktop-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+                <a href="contact.html" class="btn btn-primary" style="padding: 8px 20px;">Get Started</a>
+            </nav>
+            <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="close-menu" id="close-menu"><i class="fas fa-times"></i></div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="section bg-midnight" style="padding: 120px 0 80px;">
+        <div class="container text-center fade-up">
+            <h6 style="color: var(--color-electric-blue); font-weight: 700; text-transform: uppercase;">Our Work</h6>
+            <h1 style="color: var(--color-white); margin-bottom: 20px;">Our Work Speaks for Itself</h1>
+            <p style="color: var(--text-light); max-width: 800px; margin: 0 auto; font-size: 1.25rem;">
+                Explore websites that transformed businesses and delivered real results.
+            </p>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="section">
+        <div class="container">
+            <!-- Filters -->
+            <div class="flex-center fade-up" style="gap: 15px; flex-wrap: wrap; margin-bottom: 60px;">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="business">Business</button>
+                <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+                <button class="filter-btn" data-filter="personal">Personal</button>
+            </div>
+
+            <div class="grid grid-3" id="portfolio-grid">
+
+                <!-- Project 1 -->
+                <div class="card-service fade-up" data-category="business"
+                    style="padding: 0; overflow: hidden; border: none;">
+                    <div style="height: 250px; overflow: hidden; position: relative;">
+                        <img src="assets/images/portfolio-corporate.png" alt="TechVista"
+                            style="width: 100%; height: 100%; object-fit: cover; transition: 0.5s;">
+                        <div
+                            style="position: absolute; top: 15px; right: 15px; background: rgba(0,0,0,0.7); color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem;">
+                            Business</div>
+                    </div>
+                    <div style="padding: 24px;">
+                        <h3 style="margin-bottom: 5px;">TechVista Corporate</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 15px;">Modern B2B
+                            website with lead generation focus.</p>
+                        <div style="display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap;">
+                            <span
+                                style="font-size: 0.8rem; background: #e0f2fe; color: var(--color-electric-blue); padding: 2px 8px; border-radius: 4px;">React</span>
+                            <span
+                                style="font-size: 0.8rem; background: #e0f2fe; color: var(--color-electric-blue); padding: 2px 8px; border-radius: 4px;">Node.js</span>
+                        </div>
+                        <a href="#" style="color: var(--color-electric-blue); font-weight: 600;">View Case Study <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card-service fade-up" data-category="ecommerce"
+                    style="padding: 0; overflow: hidden; border: none;">
+                    <div style="height: 250px; overflow: hidden; position: relative;">
+                        <img src="assets/images/portfolio-restaurant.png" alt="GreenLeaf"
+                            style="width: 100%; height: 100%; object-fit: cover; transition: 0.5s;">
+                        <div
+                            style="position: absolute; top: 15px; right: 15px; background: rgba(0,0,0,0.7); color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem;">
+                            E-Commerce</div>
+                    </div>
+                    <div style="padding: 24px;">
+                        <h3 style="margin-bottom: 5px;">GreenLeaf Organics</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 15px;">Full-featured
+                            organic products online store.</p>
+                        <div style="display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap;">
+                            <span
+                                style="font-size: 0.8rem; background: #e0f2fe; color: var(--color-electric-blue); padding: 2px 8px; border-radius: 4px;">Next.js</span>
+                            <span
+                                style="font-size: 0.8rem; background: #e0f2fe; color: var(--color-electric-blue); padding: 2px 8px; border-radius: 4px;">Stripe</span>
+                        </div>
+                        <a href="#" style="color: var(--color-electric-blue); font-weight: 600;">View Case Study <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="card-service fade-up" data-category="personal"
+                    style="padding: 0; overflow: hidden; border: none;">
+                    <div style="height: 250px; overflow: hidden; position: relative;">
+                        <img src="assets/images/portfolio-personal.png" alt="Personal Portfolio"
+                            style="width: 100%; height: 100%; object-fit: cover; transition: 0.5s;">
+                        <div
+                            style="position: absolute; top: 15px; right: 15px; background: rgba(0,0,0,0.7); color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem;">
+                            Personal</div>
+                    </div>
+                    <div style="padding: 24px;">
+                        <h3 style="margin-bottom: 5px;">Alex Dev Portfolio</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 15px;">Minimalist
+                            photography and dev portfolio.</p>
+                        <div style="display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap;">
+                            <span
+                                style="font-size: 0.8rem; background: #e0f2fe; color: var(--color-electric-blue); padding: 2px 8px; border-radius: 4px;">Webflow</span>
+                        </div>
+                        <a href="#" style="color: var(--color-electric-blue); font-weight: 600;">View Case Study <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 4 (Using Corporate again as placeholder) -->
+                <div class="card-service fade-up" data-category="business"
+                    style="padding: 0; overflow: hidden; border: none;">
+                    <div style="height: 250px; overflow: hidden; position: relative;">
+                        <img src="assets/images/portfolio-corporate.png" alt="UrbanNest"
+                            style="width: 100%; height: 100%; object-fit: cover; transition: 0.5s;">
+                        <div
+                            style="position: absolute; top: 15px; right: 15px; background: rgba(0,0,0,0.7); color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem;">
+                            Business</div>
+                    </div>
+                    <div style="padding: 24px;">
+                        <h3 style="margin-bottom: 5px;">UrbanNest Realty</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 15px;">Property
+                            listing and management portal.</p>
+                        <div style="display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap;">
+                            <span
+                                style="font-size: 0.8rem; background: #e0f2fe; color: var(--color-electric-blue); padding: 2px 8px; border-radius: 4px;">Vue.js</span>
+                            <span
+                                style="font-size: 0.8rem; background: #e0f2fe; color: var(--color-electric-blue); padding: 2px 8px; border-radius: 4px;">Firebase</span>
+                        </div>
+                        <a href="#" style="color: var(--color-electric-blue); font-weight: 600;">View Case Study <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-midnight">
+        <div class="container">
+            <div class="grid grid-4"
+                style="border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 60px; margin-bottom: 40px;">
+                <div class="footer-links">
+                    <a href="index.html" class="logo"
+                        style="margin-bottom: 20px; display: block;">YourBrand<span>.</span></a>
+                    <p style="color: var(--text-secondary);">Building digital experiences that matter.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </div>
+                <!-- ... other footer cols same as index ... -->
+            </div>
+            <div class="text-center" style="color: var(--text-secondary); font-size: 0.9rem;">
+                &copy; 2026 YourBrand Web Solutions. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Simple Filter Logic
+        const buttons = document.querySelectorAll('.filter-btn');
+        const cards = document.querySelectorAll('#portfolio-grid > div');
+
+        buttons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Active class
+                buttons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                cards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    if (filter === 'all' || category === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

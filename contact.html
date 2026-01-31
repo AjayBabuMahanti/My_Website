@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | YourBrand Web Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #e2e8f0;
+            border-radius: var(--radius-md);
+            font-family: inherit;
+            font-size: 1rem;
+            background: #f8fafc;
+            transition: var(--transition-fast);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--color-electric-blue);
+            background: white;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo">YourBrand<span>.</span></a>
+            <nav class="desktop-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+                <a href="contact.html" class="btn btn-primary" style="padding: 8px 20px;">Get Started</a>
+            </nav>
+            <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="close-menu" id="close-menu"><i class="fas fa-times"></i></div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Contact Split Section -->
+    <section class="section" style="padding: 80px 0;">
+        <div class="container">
+            <div class="grid grid-2" style="gap: 80px; align-items: flex-start;">
+
+                <!-- Left: Form -->
+                <div class="fade-up">
+                    <h6 style="color: var(--color-electric-blue); font-weight: 700; text-transform: uppercase;">Contact
+                        Us</h6>
+                    <h1 style="margin-bottom: 10px;">Let's Build Something Amazing</h1>
+                    <p style="color: var(--text-secondary); margin-bottom: 40px;">Tell us about your project and we'll
+                        get back within 24 hours.</p>
+
+                    <form action="#" method="POST" id="contactForm">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Full Name *</label>
+                            <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email Address *</label>
+                            <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+                        </div>
+                        <div class="grid grid-2">
+                            <div class="form-group">
+                                <label class="form-label" for="service">Service Interested In</label>
+                                <select id="service" class="form-control">
+                                    <option value="business">Business Website</option>
+                                    <option value="ecommerce">E-Commerce</option>
+                                    <option value="landing">Landing Page</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="budget">Budget</label>
+                                <select id="budget" class="form-control">
+                                    <option value="under15k">Under ₹15,000</option>
+                                    <option value="15k-30k">₹15,000 - ₹30,000</option>
+                                    <option value="50k+">₹50,000+</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="message">Tell Us About Your Project *</label>
+                            <textarea id="message" rows="5" class="form-control"
+                                placeholder="Project details, goals, timeline..." required></textarea>
+                        </div>
+
+                        <div class="form-group flex-center" style="justify-content: flex-start; gap: 10px;">
+                            <input type="checkbox" id="privacy" required>
+                            <label for="privacy" style="font-size: 0.9rem; color: var(--text-secondary);">I agree to the
+                                privacy policy</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Right: Info -->
+                <div class="fade-up"
+                    style="background: var(--color-action-item, #f8fafc); padding: 40px; border-radius: 16px;">
+                    <h3 style="margin-bottom: 30px;">Get in Touch</h3>
+
+                    <div style="margin-bottom: 30px;">
+                        <h5 style="color: var(--text-secondary); font-size: 0.9rem; text-transform: uppercase;">Email
+                        </h5>
+                        <p style="font-size: 1.1rem; font-weight: 500;">yourbrandwebsolutions@gmail.com</p>
+                    </div>
+
+                    <div style="margin-bottom: 30px;">
+                        <h5 style="color: var(--text-secondary); font-size: 0.9rem; text-transform: uppercase;">Phone
+                        </h5>
+                        <p style="font-size: 1.1rem; font-weight: 500;">+91 9515380895</p>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary);">Mon-Sat, 10 AM - 7 PM IST</p>
+                    </div>
+
+                    <div style="margin-bottom: 30px;">
+                        <h5 style="color: var(--text-secondary); font-size: 0.9rem; text-transform: uppercase;">Location
+                        </h5>
+                        <p style="font-size: 1.1rem; font-weight: 500;">Roorkee, Uttarakhand, India</p>
+                    </div>
+
+                    <div style="margin-top: 40px; border-top: 1px solid #e2e8f0; padding-top: 30px;">
+                        <p
+                            style="display: flex; align-items: center; gap: 10px; color: var(--color-electric-blue); font-weight: 600;">
+                            <i class="fas fa-bolt"></i> Average response time: 2 hours
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div style="margin-top: 80px; max-width: 800px; margin-left: auto; margin-right: auto;" class="fade-up">
+                <div class="text-center" style="margin-bottom: 40px;">
+                    <h2>Common Questions</h2>
+                </div>
+                <div style="display: grid; gap: 20px;">
+                    <div class="card-service">
+                        <h4>What's your typical project timeline?</h4>
+                        <p class="text-secondary" style="margin: 0;">1-4 weeks depending on complexity.</p>
+                    </div>
+                    <div class="card-service">
+                        <h4>Do you offer payment plans?</h4>
+                        <p class="text-secondary" style="margin: 0;">Yes, usually 50% upfront and 50% on delivery.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-midnight">
+        <div class="container">
+            <div class="grid grid-4"
+                style="border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 60px; margin-bottom: 40px;">
+                <!-- Footer content -->
+                <div class="footer-links">
+                    <a href="index.html" class="logo"
+                        style="margin-bottom: 20px; display: block;">YourBrand<span>.</span></a>
+                    <p style="color: var(--text-secondary);">Building digital experiences that matter.</p>
+                </div>
+                <!-- ... -->
+            </div>
+            <div class="text-center" style="color: var(--text-secondary); font-size: 0.9rem;">
+                &copy; 2026 YourBrand Web Solutions. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
